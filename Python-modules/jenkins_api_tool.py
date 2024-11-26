@@ -2,7 +2,7 @@ import jenkins
 import kubernetes
 
 try:
-    server = jenkins.Jenkins('http://18.234.142.87:8080/', username='devops', password='Kwasi1991')
+    server = jenkins.Jenkins('http://18.234.142.87:8080/', username='', password='')
     user = server.get_whoami()
     print(f"User Full Name: {user['fullName']}")
     version = server.get_version()
